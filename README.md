@@ -40,7 +40,9 @@ How to implement firebase in you project:
              <action android:name="FLUTTER_NOTIFICATION_CLICK" />
              <category android:name="android.intent.category.DEFAULT" />
           </intent-filter>
+      </activity>
    
+      <application   
          <meta-data
             android:name="com.google.firebase.messaging.default_notification_channel_id"
             android:value="high_importance_channel" />
@@ -52,6 +54,8 @@ How to implement firebase in you project:
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/notification_color" />   
+   
+      </application>
      ```
 
 7. In `app/build.gradle`
